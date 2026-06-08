@@ -1,0 +1,425 @@
+[
+  {
+    "id": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+    "type": "vision",
+    "label": "Comprehensive Education Dashboard PRD",
+    "description": "This product aims to empower educators, system leaders, and policymakers with a comprehensive dashboard to measure and improve student outcomes, system responsiveness, and institutional effectiveness through data-driven insights and actionable frameworks.",
+    "relationships": [
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "0531ac9c-edfd-45c9-a950-c8f132049e8c",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "2ea9c374-b0a0-4688-8ce3-7016ff137e99",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "321c42a3-9c22-4c6b-9658-ab7f2e249252",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "9383ab2b-fb2d-493f-9e46-351bd601091e",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "59baa974-4320-481d-86ba-c4d15e8156aa",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "b534b832-5bb5-407e-88c8-cbc0ad374361",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "5752d594-b97f-4824-9f84-3d618e4dfc84",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "5e4424bb-88cc-438d-86f7-2a742e895366",
+        "type": "contains"
+      },
+      {
+        "from": "5b5efb87-1427-45a7-b74f-dc9d7ea89e81",
+        "to": "67270037-77f1-4045-ab54-befbdddd61d6",
+        "type": "contains"
+      }
+    ]
+  },
+  {
+    "id": "0531ac9c-edfd-45c9-a950-c8f132049e8c",
+    "type": "feature",
+    "label": "Interactive Dashboards",
+    "description": "Interactive dashboards for each framework (ERLAW, ALIVE, PACE/SCALE).",
+    "metadata": {
+      "priority": "critical"
+    },
+    "relationships": []
+  },
+  {
+    "id": "2ea9c374-b0a0-4688-8ce3-7016ff137e99",
+    "type": "feature",
+    "label": "Customizable Reports",
+    "description": "Customizable reports and data visualizations.",
+    "metadata": {
+      "priority": "high"
+    },
+    "relationships": []
+  },
+  {
+    "id": "321c42a3-9c22-4c6b-9658-ab7f2e249252",
+    "type": "feature",
+    "label": "Real-time Data Tracking",
+    "description": "Real-time data tracking and updates.",
+    "metadata": {
+      "priority": "critical"
+    },
+    "relationships": []
+  },
+  {
+    "id": "9383ab2b-fb2d-493f-9e46-351bd601091e",
+    "type": "feature",
+    "label": "Collaboration Tools",
+    "description": "Collaboration tools for stakeholders.",
+    "metadata": {
+      "priority": "medium"
+    },
+    "relationships": []
+  },
+  {
+    "id": "59baa974-4320-481d-86ba-c4d15e8156aa",
+    "type": "feature",
+    "label": "Accessibility Features",
+    "description": "Accessibility features for diverse users.",
+    "metadata": {
+      "priority": "high"
+    },
+    "relationships": []
+  },
+  {
+    "id": "b534b832-5bb5-407e-88c8-cbc0ad374361",
+    "type": "page",
+    "label": "Home Dashboard",
+    "description": "Page: Home Dashboard",
+    "relationships": []
+  },
+  {
+    "id": "5752d594-b97f-4824-9f84-3d618e4dfc84",
+    "type": "page",
+    "label": "Student Outcomes (ERLAW)",
+    "description": "Page: Student Outcomes (ERLAW)",
+    "relationships": []
+  },
+  {
+    "id": "5e4424bb-88cc-438d-86f7-2a742e895366",
+    "type": "page",
+    "label": "System Leader Impact (ALIVE)",
+    "description": "Page: System Leader Impact (ALIVE)",
+    "relationships": []
+  },
+  {
+    "id": "67270037-77f1-4045-ab54-befbdddd61d6",
+    "type": "page",
+    "label": "Institutional Framework (PACE/SCALE)",
+    "description": "Page: Institutional Framework (PACE/SCALE)",
+    "relationships": []
+  },
+  {
+    "id": "c7e1684a-c08c-474d-ae54-b7717a5f8457",
+    "type": "route",
+    "label": "/",
+    "description": "Home Dashboard",
+    "relationships": []
+  },
+  {
+    "id": "dc7b3f40-d949-4dc9-92e4-9fa65ca7ce14",
+    "type": "route",
+    "label": "/student-outcomes",
+    "description": "Student Outcomes (ERLAW)",
+    "relationships": []
+  },
+  {
+    "id": "d7273666-f19e-4a43-945a-972272ff506b",
+    "type": "route",
+    "label": "/system-leader-impact",
+    "description": "System Leader Impact (ALIVE)",
+    "relationships": []
+  },
+  {
+    "id": "2e188c7c-202f-49d5-9cee-ab7c85e684a9",
+    "type": "route",
+    "label": "/institutional-framework",
+    "description": "Institutional Framework (PACE/SCALE)",
+    "relationships": []
+  },
+  {
+    "id": "373650b0-ea92-4cb1-8e3c-7261a4137da4",
+    "type": "component",
+    "label": "Navbar",
+    "description": "Navigation bar for the application",
+    "relationships": [
+      {
+        "from": "373650b0-ea92-4cb1-8e3c-7261a4137da4",
+        "to": "3b7147bf-ac47-4aaa-8e38-74594d974a48",
+        "type": "depends-on"
+      }
+    ]
+  },
+  {
+    "id": "3b7147bf-ac47-4aaa-8e38-74594d974a48",
+    "type": "dependency",
+    "label": "react-router-dom",
+    "description": "Dependency: react-router-dom",
+    "relationships": []
+  },
+  {
+    "id": "9b94a00e-f403-4e75-bec1-f3905322088b",
+    "type": "component",
+    "label": "Sidebar",
+    "description": "Sidebar for navigation and quick access",
+    "relationships": [
+      {
+        "from": "9b94a00e-f403-4e75-bec1-f3905322088b",
+        "to": "55d19a70-8f71-4ed0-b1de-0848def38387",
+        "type": "depends-on"
+      }
+    ]
+  },
+  {
+    "id": "55d19a70-8f71-4ed0-b1de-0848def38387",
+    "type": "dependency",
+    "label": "react-router-dom",
+    "description": "Dependency: react-router-dom",
+    "relationships": []
+  },
+  {
+    "id": "a6b23ae2-b66d-436c-a15e-07d54fd06b82",
+    "type": "component",
+    "label": "Footer",
+    "description": "Footer for the application",
+    "relationships": []
+  },
+  {
+    "id": "f391c587-2308-4fd6-a3e3-0928916c70d4",
+    "type": "component",
+    "label": "Chart",
+    "description": "Chart component for data visualization",
+    "relationships": [
+      {
+        "from": "f391c587-2308-4fd6-a3e3-0928916c70d4",
+        "to": "a5cfa57f-d397-48d6-ac8f-7f505890829b",
+        "type": "depends-on"
+      }
+    ]
+  },
+  {
+    "id": "a5cfa57f-d397-48d6-ac8f-7f505890829b",
+    "type": "dependency",
+    "label": "d3.js",
+    "description": "Dependency: d3.js",
+    "relationships": []
+  },
+  {
+    "id": "75aa614e-6298-4712-9ffc-41b15464400a",
+    "type": "component",
+    "label": "ReportCard",
+    "description": "Card component for displaying reports",
+    "relationships": []
+  },
+  {
+    "id": "42bfbd46-cf23-4635-9d17-9a09981c666e",
+    "type": "file",
+    "label": "src/components/Navbar.tsx",
+    "description": "File: src/components/Navbar.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "03911905-0086-4d3e-af83-511fd4a5484b",
+    "type": "file",
+    "label": "src/components/Navbar.test.tsx",
+    "description": "File: src/components/Navbar.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "ecce3bd3-9f9e-4a49-85ef-907721040ef8",
+    "type": "file",
+    "label": "src/components/Sidebar.tsx",
+    "description": "File: src/components/Sidebar.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "8c169ec5-4847-4df0-b07c-117cc8c5bafb",
+    "type": "file",
+    "label": "src/components/Sidebar.test.tsx",
+    "description": "File: src/components/Sidebar.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "83da3b09-925b-43df-b2e1-d0411ef9fde8",
+    "type": "file",
+    "label": "src/components/Footer.tsx",
+    "description": "File: src/components/Footer.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "7a41f703-8412-4727-93b0-dbbc12fe0c27",
+    "type": "file",
+    "label": "src/components/Footer.test.tsx",
+    "description": "File: src/components/Footer.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "9dc670ae-f3f4-4f1d-ab0f-69282d615868",
+    "type": "file",
+    "label": "src/components/Chart.tsx",
+    "description": "File: src/components/Chart.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "101a999a-8e2e-4215-ac83-fba7af8f61e6",
+    "type": "file",
+    "label": "src/components/Chart.test.tsx",
+    "description": "File: src/components/Chart.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "3b419c57-76c8-4aea-aed1-ed2ebbf0752b",
+    "type": "file",
+    "label": "src/components/ReportCard.tsx",
+    "description": "File: src/components/ReportCard.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "4f6aa29a-0a7c-42d1-a434-d524e4f8a0ac",
+    "type": "file",
+    "label": "src/components/ReportCard.test.tsx",
+    "description": "File: src/components/ReportCard.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "dacf6952-24a1-49fa-bab3-c8457151f142",
+    "type": "file",
+    "label": "src/pages/HomeDashboard.tsx",
+    "description": "File: src/pages/HomeDashboard.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "866bec10-0a22-4934-90e1-40a7e70dfb5d",
+    "type": "file",
+    "label": "src/pages/HomeDashboard.test.tsx",
+    "description": "File: src/pages/HomeDashboard.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "12a42682-5642-4c52-922b-0a02130e053c",
+    "type": "file",
+    "label": "src/pages/StudentOutcomes.tsx",
+    "description": "File: src/pages/StudentOutcomes.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "f556de6b-6a92-4373-8d27-01f06c5fa2c9",
+    "type": "file",
+    "label": "src/pages/StudentOutcomes.test.tsx",
+    "description": "File: src/pages/StudentOutcomes.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "04b289e2-cf62-4a03-9003-5ac3477ec1a9",
+    "type": "file",
+    "label": "src/pages/SystemLeaderImpact.tsx",
+    "description": "File: src/pages/SystemLeaderImpact.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "eb6bb28c-6c78-4dab-afd3-d6aac534c4a8",
+    "type": "file",
+    "label": "src/pages/SystemLeaderImpact.test.tsx",
+    "description": "File: src/pages/SystemLeaderImpact.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "b5279bda-85dc-4fca-b035-52d005434b80",
+    "type": "file",
+    "label": "src/pages/InstitutionalFramework.tsx",
+    "description": "File: src/pages/InstitutionalFramework.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "0d33b689-afb8-4001-9a96-ee0c53a828b8",
+    "type": "file",
+    "label": "src/pages/InstitutionalFramework.test.tsx",
+    "description": "File: src/pages/InstitutionalFramework.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "68dcdf84-a126-46b9-ba79-b2a6ac74bd7f",
+    "type": "file",
+    "label": "index.html",
+    "description": "File: index.html",
+    "metadata": {
+      "language": "html"
+    },
+    "relationships": []
+  }
+]

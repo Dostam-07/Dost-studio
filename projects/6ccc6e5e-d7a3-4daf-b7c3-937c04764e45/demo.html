@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Management & Visualization</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-gray-800">DataViz Pro</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Dashboard</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Reports</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Settings</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Data Card 1 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-semibold text-gray-800">Sales Performance</h2>
+          <i data-lucide="trending-up" class="w-6 h-6 text-blue-500"></i>
+        </div>
+        <div class="text-gray-600 mb-4">
+          <p>Total Sales: $1,250,000</p>
+          <p>Growth: +12.5%</p>
+        </div>
+        <div class="h-32 bg-gray-100 rounded-lg flex items-center justify-center">
+          <span class="text-gray-500">Chart Placeholder</span>
+        </div>
+      </div>
+
+      <!-- Data Card 2 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-semibold text-gray-800">User Engagement</h2>
+          <i data-lucide="users" class="w-6 h-6 text-green-500"></i>
+        </div>
+        <div class="text-gray-600 mb-4">
+          <p>Active Users: 15,342</p>
+          <p>Engagement Rate: 68%</p>
+        </div>
+        <div class="h-32 bg-gray-100 rounded-lg flex items-center justify-center">
+          <span class="text-gray-500">Chart Placeholder</span>
+        </div>
+      </div>
+
+      <!-- Data Card 3 -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xl font-semibold text-gray-800">Project Progress</h2>
+          <i data-lucide="clipboard-list" class="w-6 h-6 text-purple-500"></i>
+        </div>
+        <div class="text-gray-600 mb-4">
+          <p>Completed Tasks: 78/120</p>
+          <p>On Track: 85%</p>
+        </div>
+        <div class="h-32 bg-gray-100 rounded-lg flex items-center justify-center">
+          <span class="text-gray-500">Chart Placeholder</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Table -->
+    <div class="mt-8 bg-white rounded-lg shadow overflow-hidden">
+      <div class="p-6 border-b">
+        <h2 class="text-xl font-semibold text-gray-800">Recent Transactions</h2>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="min-w-full">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Description</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 text-sm text-gray-800">2023-10-15</td>
+              <td class="px-6 py-4 text-sm text-gray-800">Software Subscription</td>
+              <td class="px-6 py-4 text-sm text-gray-800">$499.00</td>
+              <td class="px-6 py-4 text-sm text-green-600">Completed</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm text-gray-800">2023-10-14</td>
+              <td class="px-6 py-4 text-sm text-gray-800">Marketing Campaign</td>
+              <td class="px-6 py-4 text-sm text-gray-800">$2,500.00</td>
+              <td class="px-6 py-4 text-sm text-yellow-600">Pending</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm text-gray-800">2023-10-13</td>
+              <td class="px-6 py-4 text-sm text-gray-800">Office Supplies</td>
+              <td class="px-6 py-4 text-sm text-gray-800">$350.00</td>
+              <td class="px-6 py-4 text-sm text-green-600">Completed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-8">
+    <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+      <p>&copy; 2023 DataViz Pro. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

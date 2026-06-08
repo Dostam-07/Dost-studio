@@ -1,0 +1,23 @@
+{
+  "theme": "dark",
+  "ollamaUrl": "http://localhost:11434",
+  "apiProvider": "openrouter",
+  "openRouterKey": "sk-or-v1",
+  "openRouterKeys": [
+    "sk-or-v1",
+    "sk-or-v1",
+    "sk-or-v1",
+    "sk-or-v1",
+    "sk-or-v1"
+  ],
+  "openRouterModel": "deepseek/deepseek-chat",
+  "models": {
+    "planner": "deepseek/deepseek-chat",
+    "architect": "deepseek/deepseek-chat",
+    "coder": "deepseek/deepseek-chat",
+    "vision": "deepseek/deepseek-chat"
+  },
+  "projectsDir": "",
+  "figmaAccessToken": "",
+  "promptOverrides": {}
+}

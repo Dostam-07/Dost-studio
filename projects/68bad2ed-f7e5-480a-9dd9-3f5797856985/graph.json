@@ -1,0 +1,417 @@
+[
+  {
+    "id": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+    "type": "vision",
+    "label": "Layers UI Design System PRD",
+    "description": "Layers is a comprehensive UI design system that enables educators, administrators, and policymakers to measure and improve student outcomes, system leadership, institutional effectiveness, and school-level improvements through a unified, data-driven framework. It provides dynamic dashboards, data input forms, analytics engines, collaboration tools, and custom reporting to empower stakeholders in the education sector.",
+    "relationships": [
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "42f2b667-88b4-487e-90e3-2daa0420de2b",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "d09924f1-3665-478e-9abe-b7fe961e9d52",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "3c9b80c9-8ed0-4169-97c2-b1d1862dfd14",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "7b77356b-2812-4c85-b54a-3bbcc1a8990d",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "fd06ff91-0b9c-4b01-b520-954bf159010d",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "4edab316-9fe3-4ad9-a7de-52ec10593fc8",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "c2f3c51b-caac-4aef-a150-d5322b9a1bae",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "a200895a-5f5d-40eb-ad87-066cb6ef2350",
+        "type": "contains"
+      },
+      {
+        "from": "bfd67ab4-9be1-462b-a3ca-19888da0ff10",
+        "to": "57e349e5-226a-4c10-a272-9af9657c34c2",
+        "type": "contains"
+      }
+    ]
+  },
+  {
+    "id": "42f2b667-88b4-487e-90e3-2daa0420de2b",
+    "type": "feature",
+    "label": "Dynamic Dashboard",
+    "description": "Visualizes ERLAW, ALIVE, and PACE metrics with filters for different user roles",
+    "metadata": {
+      "priority": "critical"
+    },
+    "relationships": []
+  },
+  {
+    "id": "d09924f1-3665-478e-9abe-b7fe961e9d52",
+    "type": "feature",
+    "label": "Data Input Forms",
+    "description": "Allows manual and bulk upload of student and system data",
+    "metadata": {
+      "priority": "critical"
+    },
+    "relationships": []
+  },
+  {
+    "id": "3c9b80c9-8ed0-4169-97c2-b1d1862dfd14",
+    "type": "feature",
+    "label": "Analytics Engine",
+    "description": "Generates insights and trends from the collected data",
+    "metadata": {
+      "priority": "critical"
+    },
+    "relationships": []
+  },
+  {
+    "id": "7b77356b-2812-4c85-b54a-3bbcc1a8990d",
+    "type": "feature",
+    "label": "Collaboration Tools",
+    "description": "Enables sharing of reports and coordination among stakeholders",
+    "metadata": {
+      "priority": "high"
+    },
+    "relationships": []
+  },
+  {
+    "id": "fd06ff91-0b9c-4b01-b520-954bf159010d",
+    "type": "feature",
+    "label": "Custom Reporting",
+    "description": "Users can create and export tailored reports based on selected indicators",
+    "metadata": {
+      "priority": "high"
+    },
+    "relationships": []
+  },
+  {
+    "id": "4edab316-9fe3-4ad9-a7de-52ec10593fc8",
+    "type": "page",
+    "label": "Home Dashboard",
+    "description": "Page: Home Dashboard",
+    "relationships": []
+  },
+  {
+    "id": "c2f3c51b-caac-4aef-a150-d5322b9a1bae",
+    "type": "page",
+    "label": "Data Entry",
+    "description": "Page: Data Entry",
+    "relationships": []
+  },
+  {
+    "id": "a200895a-5f5d-40eb-ad87-066cb6ef2350",
+    "type": "page",
+    "label": "Analytics",
+    "description": "Page: Analytics",
+    "relationships": []
+  },
+  {
+    "id": "57e349e5-226a-4c10-a272-9af9657c34c2",
+    "type": "page",
+    "label": "Collaboration Hub",
+    "description": "Page: Collaboration Hub",
+    "relationships": []
+  },
+  {
+    "id": "e6907edd-4775-4b3b-8325-dada8312438f",
+    "type": "route",
+    "label": "/",
+    "description": "Home Dashboard Page",
+    "relationships": []
+  },
+  {
+    "id": "90d47733-e087-4be9-8640-6d0628c3ae25",
+    "type": "route",
+    "label": "/data-entry",
+    "description": "Data Entry Page",
+    "relationships": []
+  },
+  {
+    "id": "6f3817cc-75be-4fd6-88ad-f6258512e6a9",
+    "type": "route",
+    "label": "/analytics",
+    "description": "Analytics Page",
+    "relationships": [
+      {
+        "from": "6f3817cc-75be-4fd6-88ad-f6258512e6a9",
+        "to": "a200895a-5f5d-40eb-ad87-066cb6ef2350",
+        "type": "implements"
+      }
+    ]
+  },
+  {
+    "id": "207a0b0f-24f3-4666-acd7-bf548b9638fa",
+    "type": "route",
+    "label": "/collaboration-hub",
+    "description": "Collaboration Hub Page",
+    "relationships": []
+  },
+  {
+    "id": "999ff6df-7b2f-4f27-b507-991b3602a94c",
+    "type": "component",
+    "label": "Navbar",
+    "description": "Navigation Bar",
+    "relationships": [
+      {
+        "from": "999ff6df-7b2f-4f27-b507-991b3602a94c",
+        "to": "cbaf7529-085d-4af7-872d-b429695a9fd7",
+        "type": "depends-on"
+      }
+    ]
+  },
+  {
+    "id": "cbaf7529-085d-4af7-872d-b429695a9fd7",
+    "type": "dependency",
+    "label": "zustand",
+    "description": "Dependency: zustand",
+    "relationships": []
+  },
+  {
+    "id": "1e0251e0-9941-4761-bf04-f4264dff29c0",
+    "type": "component",
+    "label": "AnalyticsChart",
+    "description": "Analytics Chart with D3.js",
+    "relationships": [
+      {
+        "from": "1e0251e0-9941-4761-bf04-f4264dff29c0",
+        "to": "a8824902-3097-40c2-a03d-73f7f3e82e02",
+        "type": "depends-on"
+      }
+    ]
+  },
+  {
+    "id": "a8824902-3097-40c2-a03d-73f7f3e82e02",
+    "type": "dependency",
+    "label": "d3",
+    "description": "Dependency: d3",
+    "relationships": []
+  },
+  {
+    "id": "86147191-08ed-4450-9cc6-d91cf9abe2b5",
+    "type": "component",
+    "label": "DataForm",
+    "description": "Data Input Form",
+    "relationships": [
+      {
+        "from": "86147191-08ed-4450-9cc6-d91cf9abe2b5",
+        "to": "60667ca5-10a4-44e8-af7e-80c0c032752e",
+        "type": "depends-on"
+      }
+    ]
+  },
+  {
+    "id": "60667ca5-10a4-44e8-af7e-80c0c032752e",
+    "type": "dependency",
+    "label": "zustand",
+    "description": "Dependency: zustand",
+    "relationships": []
+  },
+  {
+    "id": "533eff23-31a0-4c36-ab8d-1fa6b81105d8",
+    "type": "component",
+    "label": "CollaborationBoard",
+    "description": "Collaboration Board",
+    "relationships": [
+      {
+        "from": "533eff23-31a0-4c36-ab8d-1fa6b81105d8",
+        "to": "ed294052-f9c9-4d14-b06a-2595cbcd33c9",
+        "type": "depends-on"
+      }
+    ]
+  },
+  {
+    "id": "ed294052-f9c9-4d14-b06a-2595cbcd33c9",
+    "type": "dependency",
+    "label": "zustand",
+    "description": "Dependency: zustand",
+    "relationships": []
+  },
+  {
+    "id": "ffbf1a8b-9989-417e-b9cb-37db5c6e8e3f",
+    "type": "file",
+    "label": "src/components/Navbar.tsx",
+    "description": "File: src/components/Navbar.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "6032e0b3-2c20-474a-bcb6-31f1697ed366",
+    "type": "file",
+    "label": "src/components/Navbar.test.tsx",
+    "description": "File: src/components/Navbar.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "9e544106-626d-478e-89d5-32a3274b0777",
+    "type": "file",
+    "label": "src/components/AnalyticsChart.tsx",
+    "description": "File: src/components/AnalyticsChart.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "4ad7833c-ad17-4fd1-a772-93875940c0d3",
+    "type": "file",
+    "label": "src/components/AnalyticsChart.test.tsx",
+    "description": "File: src/components/AnalyticsChart.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "264c055f-9f02-40d5-9277-e7fdb70c6c39",
+    "type": "file",
+    "label": "src/components/DataForm.tsx",
+    "description": "File: src/components/DataForm.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "df7ff460-e585-47c6-840f-912145079802",
+    "type": "file",
+    "label": "src/components/DataForm.test.tsx",
+    "description": "File: src/components/DataForm.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "681d6d35-a7d9-4a4e-8b2b-06fcbb88a643",
+    "type": "file",
+    "label": "src/components/CollaborationBoard.tsx",
+    "description": "File: src/components/CollaborationBoard.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "5cbd44e6-f8dd-463f-8bbb-f7b9b615adef",
+    "type": "file",
+    "label": "src/components/CollaborationBoard.test.tsx",
+    "description": "File: src/components/CollaborationBoard.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "b7be0d5d-b87c-4c9e-a8fa-16810c624223",
+    "type": "file",
+    "label": "src/pages/HomeDashboard.tsx",
+    "description": "File: src/pages/HomeDashboard.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "dfed0e8c-a5f4-4af7-85f4-3d4069f516ee",
+    "type": "file",
+    "label": "src/pages/HomeDashboard.test.tsx",
+    "description": "File: src/pages/HomeDashboard.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "6ef22433-c5b0-4d62-83a8-a826f44892c7",
+    "type": "file",
+    "label": "src/pages/DataEntry.tsx",
+    "description": "File: src/pages/DataEntry.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "744e39f8-ad77-4ac0-a2e7-b5c3e0547153",
+    "type": "file",
+    "label": "src/pages/DataEntry.test.tsx",
+    "description": "File: src/pages/DataEntry.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "9b0463f7-663b-49aa-af26-0dc1de16e063",
+    "type": "file",
+    "label": "src/pages/Analytics.tsx",
+    "description": "File: src/pages/Analytics.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "13f83f6f-109b-4b45-bd61-731a3d92a5fe",
+    "type": "file",
+    "label": "src/pages/Analytics.test.tsx",
+    "description": "File: src/pages/Analytics.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "eefd0337-fcc1-44f8-9d25-6c6590408831",
+    "type": "file",
+    "label": "src/pages/CollaborationHub.tsx",
+    "description": "File: src/pages/CollaborationHub.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "514c9fe8-956d-47ae-9ffb-c37c4423e673",
+    "type": "file",
+    "label": "src/pages/CollaborationHub.test.tsx",
+    "description": "File: src/pages/CollaborationHub.test.tsx",
+    "metadata": {
+      "language": "typescript"
+    },
+    "relationships": []
+  },
+  {
+    "id": "4e8ca229-d227-46e1-b526-583286d38a6a",
+    "type": "file",
+    "label": "index.html",
+    "description": "File: index.html",
+    "metadata": {
+      "language": "html"
+    },
+    "relationships": []
+  }
+]

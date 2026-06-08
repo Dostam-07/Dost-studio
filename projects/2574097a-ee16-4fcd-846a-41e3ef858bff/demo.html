@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVision - Comprehensive Education Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                <h1 class="text-xl font-bold text-gray-800">EduVision Dashboard</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Search..." class="pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="relative">
+                        <i class="fas fa-bell text-gray-500 text-xl"></i>
+                        <span class="absolute -top-1 -right-1 bg-accent text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">3</span>
+                    </div>
+                    <div class="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white font-medium">JD</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Dashboard Overview -->
+        <section class="mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Education System Overview</h2>
+                <div class="flex space-x-2 mt-4 md:mt-0">
+                    <select class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        <option>Current School Year (2023-24)</option>
+                        <option>Previous School Year (2022-23)</option>
+                    </select>
+                    <button class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">
+                        <i class="fas fa-download mr-2"></i> Export Report
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-primary">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-gray-500 text-sm">Total Students</p>
+                            <h3 class="text-2xl font-bold text-gray-800 mt-1">12,847</h3>
+                        </div>
+                        <i class="fas fa-users text-primary text-xl"></i>
+                    </div>
+                    <p class="text-green-600 text-sm mt-2"><i class="fas fa-arrow-up mr-1"></i> 4.2% from last year</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-secondary">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-gray-500 text-sm">Graduation Rate</p>
+                            <h3 class="text-2xl font-bold text-gray-800 mt-1">89.3%</h3>
+                        </div>
+                        <i class="fas fa-graduation-cap text-secondary text-xl"></i>
+                    </div>
+                    <p class="text-green-600 text-sm mt-2"><i class="fas fa-arrow-up mr-1"></i> 2.1% from last year</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-accent">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-gray-500 text-sm">Avg. Test Scores</p>
+                            <h3 class="text-2xl font-bold text-gray-800 mt-1">78.5</h3>
+                        </div>
+                        <i class="fas fa-chart-line text-accent text-xl"></i>
+                    </div>
+                    <p class="text-red-600 text-sm mt-2"><i class="fas fa-arrow-down mr-1"></i> 1.3% from last year</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-500">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="text-gray-500 text-sm">Teacher Retention</p>
+                            <h3 class="text-2xl font-bold text-gray-800 mt-1">86.7%</h3>
+                        </div>
+                        <i class="fas fa-chalkboard-teacher text-purple-500 text-xl"></i>
+                    </div>
+                    <p class="text-green-600 text-sm mt-2"><i class="fas fa-arrow-up mr-1"></i> 3.8% from last year</p>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm lg:col-span-2">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Student Performance Trends</h3>
+                        <div class="flex space-x-2">
+                            <button class="px-3 py-1 text-xs bg-gray-100 rounded hover:bg-gray-200">Math</button>
+                            <button class="px-3 py-1 text-xs bg-primary text-white rounded">Reading</button>
+                            <button class="px-3 py-1 text-xs bg-gray-100 rounded hover:bg-gray-200">Science</button>
+                        </div>
+                    </div>
+                    <div class="h-64 bg-gray-50 rounded-lg flex items-center justify-center">
+                        <p class="text-gray-400">[Performance Chart Visualization]</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Demographic Breakdown</h3>
+                    <div class="h-64 bg-gray-50 rounded-lg flex items-center justify-center">
+                        <p class="text-gray-400">[Demographic Pie Chart]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Performance Section -->
+        <section class="mb-8">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">School Performance Metrics</h2>
+                <button class="px-4 py-2 text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition">
+                    View All Schools
+                </button>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">School</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Performance</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Growth</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Attendance</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0 h-10 w-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-school text-blue-600"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-sm font-medium text-gray-900">Lincoln High School</div>
+                                            <div class="text-sm text-gray-500">1,248 students</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="h-2 w-32 bg-gray-200 rounded-full">
+                                            <div class="h-2 bg-green-500 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                        <span class="ml-2 text-sm text-gray-700">85%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        +4.2%
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">94.1%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                    <a href="#" class="text-primary hover:text-indigo-900">View Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0 h-10 w-10 bg-purple-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-school text-purple-600"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-sm font-medium text-gray-900">Roosevelt Middle</div>
+                                            <div class="text-sm text-gray-500">876 students</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="h-2 w-32 bg-gray-200 rounded-full">
+                                            <div class="h-2 bg-yellow-500 rounded-full" style="width: 72%"></div>
+                                        </div>
+                                        <span class="ml-2 text-sm text-gray-700">72%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        +1.8%
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">91.3%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                    <a href="#" class="text-primary hover:text-indigo-900">View Details</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="flex-shrink-0 h-10 w-10 bg-green-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-school text-green-600"></i>
+                                        </div>
+                                        <div class="ml-4">
+                                            <div class="text-sm font-medium text-gray-900">Washington Elementary</div>
+                                            <div class="text-sm text-gray-500">542 students</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <div class="h-2 w-32 bg-gray-200 rounded-full">
+                                            <div class="h-2 bg-green-500 rounded-full" style="width: 91%"></div>
+                                        </div>
+                                        <span class="ml-2 text-sm text-gray-700">91%</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        +5.7%
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">96.4%</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                    <a href="#" class="text-primary hover:text-indigo-900">View Details</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions & Alerts -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm lg:col-span-2">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Action Items</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start p-4 border border-gray-200 rounded-lg">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-exclamation-circle text-red-500"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="text-sm font-medium text-gray-900">Low-performing students identified</h4>
+                            <p class="text-sm text-gray-500 mt-1">23 students in 3 schools are falling behind in reading benchmarks.</p>
+                            <div class="mt-2 flex space-x-3">
+                                <button class="text-sm text-primary hover:underline">View List</button>
+                                <button class="text-sm text-primary hover:underline">Intervention Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-4 border border-gray-200 rounded-lg">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-calendar-check text-blue-500"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="text-sm font-medium text-gray-900">Upcoming professional development</h4>
+                            <p class="text-sm text-gray-500 mt-1">STEM teaching strategies workshop on June 15th for 42 teachers.</p>
+                            <div class="mt-2 flex space-x-3">
+                                <button class="text-sm text-primary hover:underline">Details</button>
+                                <button class="text-sm text-primary hover:underline">RSVP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Recent Announcements</h3>
+                <div class="space-y-4">
+                    <div class="border-b border-gray-200 pb-4">
+                        <p class="text-sm text-gray-500">May 12, 2023</p>
+                        <h4 class="text-sm font-medium text-gray-900 mt-1">New literacy curriculum approved</h4>
+                        <p class="text-sm text-gray-500 mt-1">Implementation begins Fall 2023 for grades K-5.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-4">
+                        <p class="text-sm text-gray-500">May 5, 2023</p>
+                        <h4 class="text-sm font-medium text-gray-900 mt-1">Summer meal program dates announced</h4>
+                        <p class="text-sm text-gray-500 mt-1">Free breakfast and lunch at 12 locations June-August.</p>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-500">April 28, 2023</p>
+                        <h4 class="text-sm font-medium text-gray-900 mt-1">Community engagement survey results</h4>
+                        <p class="text-sm text-gray-500 mt-1">82% satisfaction rate with school communication.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-c
